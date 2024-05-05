@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-image: url("happymother'sday.jpeg");
+            }
+            button {
+                background-color: #e93c73;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="playAudio()">Play Music</button>
+        
+        <audio id ="bg-music" loop><source src ="Nee Padalaku Muvvala – Amma Song _ Kanam Ringtone - MobCup.Com.Co.mp3" type="audio/mp3"></audio>
+        
+        <center>
+            <img src="Amma.jpg" alt="Amma Image" width="100%" height="100%">
+        </center>
+        <button onclick="pauseAudio()">Pause Music</button>
+        <script>
+            function playAudio() {
+              var audio = document.getElementById("bg-music");
+              audio.play();
+            }
+            function pauseAudio() {
+              var audio = document.getElementById("bg-music");
+              audio.pause();
+            }
+        </script> 
+
+    </body>
+</html>
